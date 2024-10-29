@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mensaje = alert("calificacion del 1-100\nopcion 1: 0-16\nopcion 2: 17-33\nopcion 3: 34-49\nopcion 4: 50-65\nopcion 5: 66-81\nopcion 6: 82-100");
+        let opcion=parseInt(prompt("ingrese la opcion:"));
+        let nota = parseFloat(prompt("ingrese la nota:"));
+        switch (opcion) {
+            case 1:
+                if (nota >=0 && nota <=16) {
+                    console.log("su calificacion es: F");
+                } else {
+                    console.log("su nota no esta dentro del rango");
+                }
+                break;
+            case 2:
+                if (nota <16 && nota <=33) {
+                    console.log("su calificacion es: E");
+                } else {
+                    console.log("su nota no esta dentro del rango");
+                }
+                break;
+            case 3: 
+                if (nota >33 && nota <49) {
+                    console.log("su calificacion es: D");
+                } else {
+                    console.log("su nota no esta dentro del rango");
+                }
+                break;
+            case 4:
+                if (nota >49 && nota <=65) {
+                    console.log("su calificacion es: C");
+                } else {
+                    console.log("su nota no esta dentro del rango");
+                }
+                break;
+            case 5:
+                if (nota >65 && nota <=81) {
+                    console.log("su calificacion es: B");
+                } else {
+                    console.log("su nota no esta dentro del rango");
+                }
+                break;
+            case 6:
+                if (nota >81 && nota <=100) {
+                    console.log("su calificacion es: A");
+                } else {
+                    console.log("su nota no esta dentro del rango");
+                }
+                break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Desarrolla un programa que simule un asistente virtual para un cine. El programa debe solicitar
+al usuario que ingrese su edad y, en función de la edad, recomendar una película adecuada:
+Niños (Edad menor a 7 años): Recomendará películas animadas y educativas aptas para todas
+las edades. Niños y Adolescentes (Edad entre 7 y 17 años): Sugerirá películas adecuadas para la
+familia, como animaciones, aventuras y comedias familiares. Adultos (Edad entre 18 y 30 años):
+Ofrecerá una variedad de géneros, como acción, drama, comedia y ciencia ficción. Personas
+Mayores (Edad mayor a 31 años): Recomendará películas clásicas y dramas que pueden ser de
+su interés.*/
+
+        
+        let x = alert("Categorias\nOpcion 1: menor a 7 años\nOpcion 2: 7-17 años\nOpcion 3: 18-30 años\nOpcion 4: mayor a 31 años");
+        let opcion = parseInt(prompt("ingrese la opcion que corresponde a su edad"));
+        let edad = parseInt(prompt("ingrese su edad:"));
+
+        switch (opcion) {
+            case 1:
+                if (edad<7) {
+                    console.log("Categoria: Niño\nPeliculas animadas y educativas");
+                } else {
+                    console.log("error");
+                }
+                break;
+            
+            case 2:
+                if (edad>=7 && edad<=17) {
+                    console.log("Categoria: Adolescente\nPeliculas de aventuras y comedia familiar");
+                } else {
+                    console.log("error");
+                }
+                break;
+
+            case 3:
+                if (edad>=18 && edad<=30) {
+                    console.log("Categoria: Adulto\nPeliculas de accion, drama y ciecnia ficcion");
+                } else {
+                    console.log("error");
+                }
+                break;
+
+            case 4:
+                if (edad>30) {
+                    console.log("Categoria: Personas mayores\nPeliculas clasicas y dramas");
+                } else {
+                    console.log("error");
+                }
+                break;
+        }
+
+    </script>
+</body>
+</html>

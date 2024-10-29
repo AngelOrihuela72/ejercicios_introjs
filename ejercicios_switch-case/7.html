@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let equipoA = 0;
+let equipoB = 0;
+
+function mostrarClasificacion() {
+    console.log("Clasificación actual:");
+    console.log(`Equipo A: ${equipoA} puntos`);
+    console.log(`Equipo B: ${equipoB} puntos`);
+}
+
+const resultado = prompt("Ingrese el resultado del partido (ganado, perdido, empatado):").toLowerCase();
+
+switch (resultado) {
+    case 'ganado':
+        equipoA += 3; 
+        console.log("Equipo A ha ganado el partido.");
+        break;
+    case 'perdido':
+        equipoB += 3; 
+        console.log("Equipo A ha perdido el partido.");
+        break;
+    case 'empatado':
+        equipoA += 1; 
+        equipoB += 1;
+        console.log("El partido ha terminado en empate.");
+        break;
+    default:
+        console.log("Resultado invalido. Por favor ingrese 'ganado', 'perdido' o 'empatado'.");
+        break;
+}
+
+mostrarClasificacion();
+
+    </script>
+</body>
+</html>

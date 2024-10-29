@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let nombre_cliente = prompt("nombre del cliente:");
+        let nombre_producto = prompt("nombre del producto:");
+        let cantidad_producto = parseInt(prompt("cantidad de productos:"));
+        let precio_unitario = parseFloat(prompt("precio unitario:"));
+        let estudiante = prompt("¿eres estudiante, si=1 y no=2?");
+        let subtotal = cantidad_producto * precio_unitario;
+
+        if (estudiante == 2) {
+            impuesto = subtotal * 0.13;
+            console.log("nombre del cliente: " + nombre_cliente);
+            console.log("nombre del producto: " + nombre_producto);
+            console.log("cantidad de productos: " + cantidad_producto);
+            console.log("precio unitario: " + precio_unitario);
+            console.log("no estudiante, impuesto del 13%: " + impuesto);
+            console.log("el total es: " + (subtotal+impuesto));
+        } else if (estudiante == 1){
+            impuesto = subtotal * 0.05;
+            console.log("nombre del cliente: " + nombre_cliente);
+            console.log("nombre del producto: " + nombre_producto);
+            console.log("cantidad de productos: " + cantidad_producto);
+            console.log("precio unitario: " + precio_unitario);
+            console.log("estudiante, impuesto del 5%: " + impuesto);
+            console.log("el total es: " + (subtotal+impuesto));
+        }
+
+
+
+    </script>
+</body>
+</html>

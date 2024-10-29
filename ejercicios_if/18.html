@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let temperatura = parseFloat(prompt("ingrese la temperatura del asensor (18° - 25° normal)"));
+        if (temperatura >=18 && temperatura <=25) {
+            console.log("temperatura valida");
+            let piso = parseInt(prompt("ingrese el piso (1-20):"));
+            if (piso >=1 && piso<=20) {
+                console.log("piso valido, dirigiendo al piso: " + piso);
+            } else {
+                console.log ("error");
+            }
+        } else {
+            console.log("error");
+        }
+    </script>
+</body>
+</html>

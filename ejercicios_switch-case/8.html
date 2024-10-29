@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let menu = alert("Menú\n1: Pizza - $10\n2: Hamburguesa - $8\n3: Ensalada - $6\n4: Refresco - $2\n5: Agua - $1\n6: Cerveza - $3");
+        let total = 0;
+        let continuar = true;
+
+while (continuar) {
+    let opcion = parseInt(prompt("Seleccione un número del menú o 0 para finalizar:"));
+
+    switch (opcion) {
+        case 1:
+            total += 10;
+            console.log("Agregado: Pizza - Total actual: $" + total);
+            break;
+        case 2:
+            total += 8;
+            console.log("Agregado: Hamburguesa - Total actual: $" + total);
+            break;
+        case 3:
+            total += 6;
+            console.log("Agregado: Ensalada - Total actual: $" + total);
+            break;
+        case 4:
+            total += 2;
+            console.log("Agregado: Refresco - Total actual: $" + total);
+            break;
+        case 5:
+            total += 1;
+            console.log("Agregado: Agua - Total actual: $" + total);
+            break;
+        case 6:
+            total += 3;
+            console.log("Agregado: Cerveza - Total actual: $" + total);
+            break;
+        case 0:
+            continuar = false;
+            break;
+        default:
+            console.log("Selección invalida. Intente de nuevo.");
+            break;
+    }
+}
+
+let metodoPago = prompt("Seleccione el metodo de pago (efectivo, tarjeta, cheque):").toLowerCase();
+let descuento = 0;
+
+switch (metodoPago) {
+    case 'efectivo':
+        descuento = 0.1; 
+        break;
+    case 'tarjeta':
+        descuento = 0; 
+        break;
+    case 'cheque':
+        descuento = 0.05; 
+        break;
+    default:
+        console.log("Metodo de pago invalido. Se aplicara sin descuento.");
+}
+
+
+let totalFinal = total - (total * descuento);
+console.log(`El total final es: $${totalFinal.toFixed(2)} (descuento aplicado: ${descuento * 100}%)`);
+
+    </script>
+</body>
+</html>

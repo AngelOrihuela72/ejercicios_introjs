@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mensaje = alert("opcion 1: 1-13 años (niño)\nopcion 2: 14-17 años (adolescente)\nopcion 3: 18-55 años (adulto)\nopcion 4: 56 en adelante (adulto mayor)");
+        let rango = parseInt(prompt("digite la opcion que esta su edad:"));
+        let edad = parseInt(prompt("digite su edad:"));
+        switch (rango){
+            case 1:
+                if (edad >0 && edad <=13) {
+                    console.log("su edad esta en el rango (niño) y es de: "+ edad);
+                } else {
+                    console.log("su edad no esta en el rango (niño)");
+                }
+                break;
+            case 2:
+                if (edad >13 && edad <=17) {
+                    console.log("su edad esta en el rango (adolescente) y es de: "+ edad);
+                    
+                } else {
+                    console.log("su edad no esta en el rango (adolescente)");
+                }
+                break;
+            case 3:
+                if (edad >17 && edad <=55) {
+                    console.log("su edad esta en el rango (adulto) y es de: "+ edad);
+                } else {
+                    console.log("su edad no esta en el rango (adulto)");
+                }
+                break;
+            case 4:
+                if (edad >55) {
+                    console.log("su edad esta en el rango (adulto mayor) y es de: "+ edad);
+                    
+                } else {
+                    console.log("su edad no esta en el rango (adulto mayor)");
+                }
+                break;
+        } 
+    </script>
+</body>
+</html>

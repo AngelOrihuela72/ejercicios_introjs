@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mensaje = alert("temperatura ambiente (18° - 25°), alerta por encima de los 50°")
+        let tempertaura = parseFloat(prompt("ingrese la temperatura"))
+        if (tempertaura >=18 && tempertaura <= 25) {
+            console.log("temperatura ambiente");
+        } else if (tempertaura >50) {
+            console.log("ALERTA!! TEMPERATURA FUERA DEL RANGO ESTIPULADO");
+        } else {
+            console.log("error");
+        }
+    </script>
+</body>
+</html>

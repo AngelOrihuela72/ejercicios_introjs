@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num1 = parseInt(prompt("ingrese el primer numero"));
+        let num2 = parseInt(prompt("ingrese el segundo numero"));
+        let operador = parseInt(prompt("ingrese el operador aritmetico (1:+ 2:- 3:* 4:/)"));
+        suma = num1 + num2;
+        resta = num1 - num2;
+        multiplicacion = (num1 * num2);
+        division = (num1 / num2);
+
+        switch (operador) {
+            case 1:
+                console.log("la suma de los dos numeros es: " + suma);
+                break;
+            case 2:
+                console.log("la resta de los dos numeros es: " + resta);
+                break;
+            case 3:
+                console.log("la multiplicacion de los dos numeros es: " + multiplicacion);
+                break;
+            case 4:
+                console.log("la resta de los numeros es: " + division);
+                break;
+        }
+
+    </script>
+</body>
+</html>

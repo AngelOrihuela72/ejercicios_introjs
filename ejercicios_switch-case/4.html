@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            /*  En una tienda se venden tres tipos de productos: "A" (alimentos), "V" (vestimenta) y "E"
+            (electrónicos). Cada producto tiene un precio base diferente. Escribe un programa en que solicite
+            al cliente el tipo de producto que desea comprar (A, V o E) y la cantidad de unidades. Para
+            calcular el costo total de la compra. Si el cliente compra productos de tipo "A", obtiene un 10%
+            de descuento. Si compra productos de tipo "V", obtiene un 5% de descuento. Si compra
+            productos de tipo "E", no hay descuento. Finalmente, muestra el costo total de la compra con el
+            descuento aplicado y el costo sin descuento. Asegúrate de validar que la cantidad de unidades
+            sea un número positivo.*/
+
+            let mensaje = alert("TIPOS DE PRODUCTOS:\nOpcion 1: Alimentos (A)\nOpcion 2: Vestimenta (V)\nOpcion 3: Electronicos (E)");
+            let tipo_producto = parseInt(prompt("¿que tipo de producto deseas comprar? (1, 2 o 3)"));
+            let cantidad_unidades = parseInt(prompt("¿cuantas unidades deseas comprar?"));
+            let valor_unidad = parseFloat(prompt("ingresa el valor por unidad"));
+            descuento1 = (valor_unidad * 0.10);
+            descuento2 = (valor_unidad * 0.05);
+
+            switch (tipo_producto) {
+
+                case 1:
+                    console.log("elegiste Alimentos (A) Obtienes un 10% de descuento")
+                    console.log("el total a pagar con descuento aplicado es de: " + descuento1);
+                    console.log("el total a pagar sin descuento aplicado es de: " + valor_unidad);
+                    break;
+                
+                case 2: 
+                    console.log("elegiste Vestimenta (V) Obtienes un 5% de descuento")
+                    console.log("el total a pagar con descuento aplicado es de: " + descuento2);
+                    console.log("el total a pagar sin descuento aplicado es de: " + valor_unidad);
+                    break;
+
+                case 3: 
+                    console.log("elegiste Electronicos (E) No hay descuento");
+                    console.log("el total a pagar es de: " + valor_unidad);
+                    break;
+            }
+
+    </script>
+</body>
+</html>

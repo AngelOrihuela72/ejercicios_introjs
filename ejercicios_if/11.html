@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let precio=parseFloat(prompt("precio del producto:"));
+        let cantidad=parseInt(prompt("cantidad comprada:"));
+        let descuento = 0;
+
+        if (cantidad>=10) {
+            console.log("descuento del 10%");
+            descuento = precio * 0.10;
+            console.log("el monto total con descuento es de: " + (precio - descuento));
+        } else if (cantidad>=5 && cantidad<10) {
+            console.log("descuento del 5%");
+            descuento = precio * 0.05;
+            console.log("el monto total con desceunto es de: " + (precio - descuento));
+        } else if (cantidad<5) {
+            console.log("no aplica descuento")
+        } else {
+            console.log("error")
+        }
+
+    </script>
+</body>
+</html>
